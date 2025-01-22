@@ -1,16 +1,15 @@
 //
-//  CreateShishaTableMigration.swift
-//  project
+//  CreateRestaurantTableMigration.swift
 //
 //  Created by Artur Anissimov on 02.01.2025.
 //
 
 import Fluent
 
-struct CreateShishaTableMigration: AsyncMigration {
+struct CreateRestaurantTableMigration: AsyncMigration {
     
     func prepare(on database: FluentKit.Database) async throws {
-        try await database.schema("shishas")
+        try await database.schema("restaurants")
             .id()
             .field("name", .string, .required)
             .field("image_url", .string)
@@ -25,6 +24,6 @@ struct CreateShishaTableMigration: AsyncMigration {
     
     
     func revert(on database: FluentKit.Database) async throws {
-        try await database.schema("shishas").delete()
+        try await database.schema("restaurants").delete()
     }
 }

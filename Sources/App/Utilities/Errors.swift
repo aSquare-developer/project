@@ -1,6 +1,5 @@
 //
-//  File.swift
-//  project
+//  Errors.swift
 //
 //  Created by Artur Anissimov on 04.01.2025.
 //

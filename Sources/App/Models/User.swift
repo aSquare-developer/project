@@ -1,6 +1,5 @@
 //
 //  User.swift
-//  project
 //
 //  Created by Artur Anissimov on 02.01.2025.
 //

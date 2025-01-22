@@ -1,6 +1,5 @@
 //
-//  Shisha.swift
-//  project
+//  Restaurant.swift
 //
 //  Created by Artur Anissimov on 02.01.2025.
 //
@@ -24,8 +23,8 @@ final class Coordinates: Fields, @unchecked Sendable {
 }
 
 
-final class Shisha: Model, Content, @unchecked Sendable {
-    static let schema: String = "shishas"
+final class Restaurant: Model, Content, @unchecked Sendable {
+    static let schema: String = "restaurants"
     
     @ID(key: .id)
     var id: UUID?

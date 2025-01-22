@@ -12,7 +12,7 @@ public func configure(_ app: Application) async throws {
     
     // Migrations
     app.migrations.add(CreateUserTableMigration())
-    app.migrations.add(CreateShishaTableMigration())
+    app.migrations.add(CreateRestaurantTableMigration())
     
     try await app.autoMigrate()
     
